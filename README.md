@@ -11,4 +11,3 @@ TO install the Debian Package
  To kill processes causing Lock or error and flag -9 to force kill
  sudo kill -9 5313 5314 20070
 
- 
