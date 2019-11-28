@@ -12,6 +12,5 @@ TO install the Debian Package
  sudo kill -9 5313 5314 20070
  
  #I can type <b> lsblk </b> to list disk devices for viewing disk usages and disk free space.
- 
- # cfdisk to format disk or make disk partitions
+   cfdisk to format disk or make disk partitions
 
