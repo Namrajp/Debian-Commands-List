@@ -18,7 +18,8 @@ $ apt-cache search google-chrome
  $I can type <b> lsblk </b> to list disk devices for viewing disk usages and disk free space.
    cfdisk to format disk or make disk partitions
    * Ordered lists
-   + pluses1. First ordered list item
+   + pluses
+1. First ordered list item
 2. Another item
 ⋅⋅* Unordered sub-list. 
 1. Actual numbers don't matter, just that it's a number
