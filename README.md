@@ -1,8 +1,8 @@
 # Debian-Commands-List
-User commands Basics
+## H2 User commands Basics
 
-#To Download Google chrome Type
-wget http://www.google.com/chrome
+ *To Download* Google chrome 
+ **Type wget ** http://www.google.com/chrome
 
 <u>To Search downloaded files</u> 
 $ apt-cache search google-chrome
