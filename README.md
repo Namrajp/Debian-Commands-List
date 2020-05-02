@@ -17,6 +17,14 @@ $ apt-cache search google-chrome
  
  * $I can type <b> lsblk </b> to list disk devices for viewing disk usages and disk free space.
   + cfdisk to format disk or make disk partitions
+
+#### Enable Firewall
+`namraj@linux:~$sudo ufw enable`
+ or
+`$ sudo ufw status verbose`
+`$ sudo ufw status`
+`Status: active`
+
   
    
 
