@@ -7,6 +7,13 @@
 <u>To Search downloaded files</u> 
 `$ apt-cache search google-chrome`
 
+##### Opera setup
+wget -qO- https://deb.opera.com/archive.key | sudo apt-key a
+sudo add-apt-repository "deb [arch=i386,amd64] https://deb.opera.com/opera-stable/ stable non-free" 
+
+
+
+
 #### TO install the Debian Package
   $ sudo dpkg -i google-chrome-stable_current_amd64.deb 
  List Processes using ps and grep to select process related to apt command
@@ -136,6 +143,47 @@ If you really want to skip this, you can run the client with
 from /etc/letsencrypt/accounts
 
  (Enter 'c' to cancel): actice99raj@gmail.com
+
+ ##### Setting up Virtual Hosts
+ 
+ Ubuntu Home folder in windows subsystem 
+C:\Users\onesi\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs
+cd /mnt/c to go to c dir
+namraj@Namraj-4GZ7:/mnt/c/Users/onesi/Documents$
+
+To install xampp with wordpress
+
+after install xampp with php7 open 
+control center and start apache and mysql
+# Then go to localhost and verify apache running
+# Next delete all files in htdocs folder and download and extract wordpress folder in htdocs
+# go to localhost/wordpress to setup wp , type username root database wordpress or whatever
+# password is empty and localhost next. If this setup dont work then open wp-config-sample file
+# rename to wp-config and type manually db:wordpress user:root password:empty localhost save and 
+try localhost/wordpress. 
+
+To setup domain in vhost
+
+# Go to folder C:\xampp_new\apache\conf\extra\httpd-vhosts open this file copy <virtualHost> block and edit like :
+##<VirtualHost *:80>
+    ##ServerAdmin webmaster@dummy-host2.example.com
+    ##DocumentRoot "C:/xampp_new/htdocs/dummy-host2.example.com"
+    ##ServerName dummy-host2.example.com
+    ##ErrorLog "logs/dummy-host2.example.com-error.log"
+    ##CustomLog "logs/dummy-host2.example.com-access.log" common
+##</VirtualHost>
+
+<VirtualHost *:80>
+   DocumentRoot "C:/xampp_new/htdocs/wordpress"
+   ServerName woocommerce.test
+</VirtualHost>
+
+
+C:\Windows\System32\drivers\etc drag into desktop and edit  add line 
+127.0.0.1 woocommerce.test and drag back---due to permissions to edit there itself.
+
+# lastly, go to phpmyadmin to select wordpress database and select wp-options
+# change siteurl and home to http://woocommerce.test
 
   
    
