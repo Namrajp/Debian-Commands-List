@@ -1,5 +1,14 @@
-# Debian-Commands-List
-## User commands Basics
+# Linux commands for local server setup and configurations
+## In this guide 
+* How to install google chrome and opera browser
+* How to install a debian package
+* How to enable firewall
+* Make Ubuntu Hibernate Instead Of Sleep
+* How to install a npm package left-pad
+* How to install apache
+* How to instal PHP
+* How to instal Wordpress
+* Setting up virtual hosts
 
  [To Download google Chrome](http://www.google.com/chrome)
  **Type wget** http://www.google.com/chrome
@@ -100,7 +109,7 @@ GRANT ALL ON wordpress.* TO 'namraj'@'localhost' IDENTIFIED BY 'codingkode23';
 
 sudo systemctl restart apache2
 ---
-##### Downloading wordpress 
+##### Installing wordpress 
 Create a directory to hold wordpress eg. 
 `sudo mkdir -p /var/www/example.com`
 `cd /tmp`
