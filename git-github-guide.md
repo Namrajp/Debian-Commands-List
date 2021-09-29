@@ -1,9 +1,6 @@
 
-#### Contributing to open source ongithub for begineers
+## Contributing to open source 
 
-github.com/eggheadio-github/stack-overflow-copy-paste/blob/master/contributing.md
-
-##### Setup instruction:
 1/ Fork the repo
 2/ Clone the repo
 3/ Create a branch
@@ -18,13 +15,13 @@ and run npm run commit to our standards.
 11. Iterate the solution.
 12. Get merged.
 
-##### Fork the Repo
-$ git clone url.git
+## Fork the Repo
+`$ git clone url.git`
 
-git remote -> origin  upstream
+`git remote -> origin  upstream`
 
 #### To pull updates from the repo not your own .
-
+```
 git remote add upstream url.git
 git fetch upstream
 
@@ -35,36 +32,41 @@ git branch -D pr/last
 git checkout -b pr/last
 npm install  -> to install new dependencies added
 5/ Run npm t && npm run build.
-
+```
+```
 git commit -am 'whatever'
 git commit -am 'feat(last) : add last function'
 git commit -am 'feat(last) : add last function' --no-verify
 git push
+```
+## Working with branches on a project
 
-##### Working with branches on a project
-
-
-onesi@Namraj-4GZ7 MINGW64 ~/Desktop
 $ cd ~/Desktop
-
-onesi@Namraj-4GZ7 MINGW64 ~/Desktop
 $ mkdir sassessentials
-
-onesi@Namraj-4GZ7 MINGW64 ~/Desktop
 $ cd sassessentials
 
-onesi@Namraj-4GZ7 MINGW64 ~/Desktop/sassessentials
+### Clone --bare
+Bare clone is Cloning a .git folder from online repository without Project Working Directory.
+```
 $ git clone --bare https://github.com/planetoftheweb/sassEssentials.git .git
-
 $ git config --bool core.bare false
-$ git branch
-$ git reset --hard
+```
+### List Branches
+`$ git branch`
+### Wipe any untracked changes with `git reset`
+`$ git reset --hard`
+
+```
 $ git branch
 $ npm install
 $ git checkout 02_03e  # if error
 
 $ git stash
 $ git checkout 0203_e
+```
+### Taking a screen shot in windwos and Mac
+`windows + shift + S`  -- Windows operating sys
+`cmd + Shift + 4`. - Mac os 
 
-#### Taking a screen shot in windwos
-windows +shift + S
+### Stashing moves untracked changes to backup to reload later 
+`$ git stash-- ` 
